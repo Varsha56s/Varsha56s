@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title> Login Page </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(50deg, #90c46a, #7cd2ec);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login {
+            background-color: #fff;
+            text-align: center;
+            width: 400px;
+            height: 450px;
+            padding: 50px;
+            padding-top: 50px;
+            border-radius: 10px;
+        }
+
+        .login h2 {
+            margin-bottom: 30px;
+            color: #2c7c72;
+        }
+
+        .value input {
+            width: 90%;
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .showpassword {
+            text-align: left;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #2c7c72;
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+            width: 20%;
+            height: 10%;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: green;
+        }
+
+        .links {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #47a095;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <form class="login">
+            <h2> Login </h2>
+            <div class="value">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="value">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="showpassword">
+                <input type="checkbox" id="showpassword">
+                <label for="showpassword">Show Password</label>
+            </div>
+            <button type="submit" class="button"> SIGN IN </button>
+            <div class="links">
+                Forgot <a href="project1.html"> Username / Password </a>?
+                <p> Don't have an account? <a href="project1.html"> Sign up </a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
