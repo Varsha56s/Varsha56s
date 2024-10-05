@@ -1,151 +1,280 @@
 <!DOCTYPE html>
-<head>
-    <title>First webpage</title>
-</head>
-<body>
-    <header class="container-fluid header_topNav__W65yD py-2" style="background-image:url([object Object])">
-        <div class="container">
-            <section class="row">
-                <nav class="col-12 col-md-6">
-                    
-                        <a class="nav-link p-3 text-white" href="/">Home</a>
-                        <a class="nav-link p-3 text-white" href="/about">About</a>
-                    </div>
-                </nav>
-                <section class="col-12 col-md-6">
-
-                </section>
-                </section>
-                <section class="row">
-                    <div class="col-12">
-                        <div class="py-0 py-md-5">
-                            <div class="header_heroBanner__RrYqA py-lg-4 d-flex flex-column justify-content-center text-center text-white">
-                                <div class="py-5">
-                                    <h1>KodeMonk</h1>
-                                    <h2>My place on internet</h2>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </section>
-            </div>
-        </header>
-        <img class="w-100 post-thumbnail h-100" src="/assets/blog/images/nodejs.png" loading="lazy" decoding="async" alt="">
-</body>
-
-
-
-<style>
-    * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-display: flex;
-flex-direction: column;
-height: 100%;
-box-sizing: border-box;
-}
-
-.main-page {
-display: flex;
-width: 100%;
-height: 100%;
-box-sizing: border-box;
-flex-wrap: wrap;
-padding: 10px 100px 10px 100px;
-}
-
-.menu {
-background-color: black;
-color: white;
-padding: 20px 50px 0px;
-height: 300px;
-}
-
-header {
-div {
-align-items: center;
-text-align: center;
-margin-top: 100px;
-
-h1 {
-  font-size: 50px;
-}
-
-p {
-  font-size: larger;
-  color: wheat;
-}
-}
-}
-
-.sub-menu {
-display: flex;
-a {
-text-decoration: none;
-color: white;
-margin-left: 20px;
-font-size: larger;
-}
-}
-
-.containers {
-width: 32%;
-height: 450px;
-box-sizing: border-box;
-padding: 10px;
-box-shadow: 0px 0px 1px 1px #e8c8c8;
-margin-top: 10px;
-margin-bottom: 10px;
-margin-left: auto;
-margin-right: auto;
-border-radius: 5px;
-}
-
-.refimage {
-box-sizing: border-box;
-padding: 2px;
-width: 100%;
-height: 290px;
-}
-
-img {
-object-fit: cover;
-width: 100%;
-height: 100%;
-}
-
-.foot-info {
-background-color: black;
-color: white;
-box-sizing: border-box;
-width: 100%;
-padding: 10px;
-align-items: center;
-display: flex;
-}
-
-#Author {
-width: 50%;
-display: flex;
-box-sizing: border-box;
-justify-content: center;
-}
-
-#Links {
-width: 50%;
-box-sizing: border-box;
-display: flex;
-justify-content: flex-end;
-}
-
-.fa {
-text-decoration: none;
-color: white;
-padding: 10px;
-display: inline-flex;
-}
-</style>
+<html>
+  <head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    }
+    
+    .page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 10px 100px 10px 100px;
+    }
+    
+    .menu {
+    background-color: black;
+    color: white;
+    padding: 20px 50px 0px;
+    height: 300px;
+    }
+    
+    header {
+    div {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    
+    h1 {
+      font-size: 50px;
+    }
+    
+    p {
+      font-size: larger;
+      color: white;
+    }
+    }
+    }
+    
+    .child-menu {
+    display: flex;
+    a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: larger;
+    }
+    }
+    
+    .containers {
+    width: 32%;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 1px #e8c8c8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    }
+    
+    .referance {
+    box-sizing: border-box;
+    padding: 2px;
+    width: 100%;
+    height: 290px;
+    }
+    
+    img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .footer-info {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    }
+    
+    #Designer {
+    width: 50%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    }
+    
+    #Links {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    }
+    
+    .footer-links{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-flex;
+    }
+    </style>
+   
+  </head>
+  <body>
+    <header class="menu">
+      <section class="child-menu">
+        <a href="#">Techiespace</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      </section>
+      <div>
+        <h1>Techiespace</h1>
+        <p>My space on internet</p>
+      </div>
+    </header>
+    <div class="page">
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/nodejs.png" alt="Nodejs" />
+          </section>
+          <section>
+            <h2>Install & Manage NodeJs on Linux and Mac (With NVM)</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/angular.svg" alt="Angular" />
+          </section>
+          <section>
+            <h2>Angular 13 Released! See what`s new</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/nodejs.png" alt="Nodejs" />
+          </section>
+          <section>
+            <h2>NodeJs 16.x Becomes LTS and 17 Released</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/NET_Core_Logo.png" alt=".net core" />
+          </section>
+          <section>
+            <h2>How to install dotnet core 5.0 in Ubuntu 20.04</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/NGINX-logo-rgb-large.png" alt="nginx" />
+          </section>
+          <section>
+            <h2>How to Change / Remove Server Name Header In Nginx On Ubuntu Linux</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <article>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/keyvalue-async-store.png" alt="Key-Value" />
+          </section>
+          <section>
+            <h2>A New Async Key-Value (Local)Storage for Web (KV Storage)</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </article>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/nodejs.png" alt="Nodejs" />
+          </section>
+          <section>
+            <h2>NodeJs 16 Released - Will become LTS in October 2021</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/redis.png" alt="redis" />
+          </section>
+          <section>
+            <h2>How to Install & Get start with Redis on Ubuntu 20.04</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/mongodb.png" alt="mongodb" />
+          </section>
+          <section>
+            <h2>How to Install & Get start with MongoDb on Ubuntu 20.04</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/pg-admin-4-startup.jpg" alt="pgadmin" />
+          </section>
+          <section>
+            <h2>Install & Get start with PgAdmin 4 on Ubuntu 20.04</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/razorpay-rn--gradle-version-error.png" alt="Reactnative" />
+          </section>
+          <section>
+            <h2>Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0 - React Native</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+      <div class="containers">
+        <artical>
+          <section class="referance">
+            <img src="https://kodemonk.dev/assets/blog/images/PostgreSQL_logo.svg" alt="PostgreSQL" />
+          </section>
+          <section>
+            <h2>Installing PostgreSQL on Ubuntu 20.04</h2>
+            <time datetime="2024-10-05">05 oct 2024</time>
+          </section>
+        </artical>
+      </div>
+    </div>
+    <footer class="footer-info">
+      <section id="Designer">
+        <p>Varsha © 2024</p>
+      </section>
+      <section id="Links">
+        
+        <a href="https://www.linkedin.com" class="footer-links">Linkedin</a>
+        <a href="https://www.youtube.com" class="footer-links">Youtube</a>
+        <a href="https://www.github.com" class="footer-links">Github</a>
+        <a href="https://www.twitter.com" class="footer-links">Twitter</a>
+        <a href="varsha6605@gmail.com" class="footer-links">Email</a>
+      </section>
+    </footer>
+  </body>
+</html>
